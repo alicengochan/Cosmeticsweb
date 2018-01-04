@@ -1,0 +1,33 @@
+﻿@model CosmeticsShare.Customers.CustomersViewModels
+<div class="se-pre-con" style="display: none;"></div>
+<div class="row clearfix">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="card">
+            <div class="header" style="padding:0px;border-bottom:none">
+                <ol class="breadcrumb breadcrumb-col-teal">
+                    <li><a href="javascript:void(0);"><i class="material-icons">hlibrary_books</i> View Data</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+@using (Html.BeginForm("Search", "Customer", FormMethod.Post, new { @class = "form-horizontal search-form" }))
+{
+
+
+
+}
+<div class="row clearfix">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="detail-data" style="height:100%;">
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script type="text/javascript">
+        $(function () {
+            //ready
+            Search();
+        });
+    </script>
+}

@@ -1,0 +1,73 @@
+﻿@model CosmeticsShare.Customers.CustomersViewModels
+
+
+    <div class="card">
+        <div class="header">
+            <h2>
+                Customers
+            </h2>
+        </div>
+        <div class="body">
+            <div class="table-responsive">              
+                    <table class="table table-bordered table-striped table-hover dataTable js-exportable" id="DataTables_Table" role="grid" cellspacing="0" style="width:100%;">
+                        <thead>
+                            <tr class="headings">
+                                <th class="column-title text-center">Name</th>
+                                <th class="column-title text-center">Identity Card</th>
+                                <th class="column-title text-center">Phone</th>
+                                <th class="column-title text-center">Email</th>
+                                <th class="column-title text-center">Image</th>
+                                <th class="column-title text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr role="row" class="odd">
+                                <td class="">Prescott Bartlett</td>
+                                <td class="sorting_1">Technical Author</td>
+                                <td>London</td>
+                                <td>27</td>
+                                <td>2011/05/07</td>
+                                <td>$145,000</td>
+                            </tr>
+                            <tr role="row" class="even">
+                                <td class="">Gavin Cortez</td>
+                                <td class="sorting_1">Team Leader</td>
+                                <td>San Francisco</td>
+                                <td>22</td>
+                                <td>2008/10/26</td>
+                                <td>$235,500</td>
+                            </tr>
+
+                        </tbody>
+                    </table>                
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+    function ShowView(url) {
+        ShowViewOrEdit(url);
+        return false;
+    }
+    $(document).ready(function () {
+       
+      
+        $('#DataTables_Table').DataTable({           
+            "columnDefs": [
+                { "orderable": false, "targets": [3] },
+                { "width": "2%", "targets": [1, 2, 3] },
+
+            ],
+            "order": [[0, 'asc']],
+            "displayLength": 25,
+            "drawCallback": function (settings) {
+                var api = this.api();
+                var rows = api.rows({ page: 'current' }).nodes();
+                var last = null;
+            }
+        });
+
+       
+    });
+</script>

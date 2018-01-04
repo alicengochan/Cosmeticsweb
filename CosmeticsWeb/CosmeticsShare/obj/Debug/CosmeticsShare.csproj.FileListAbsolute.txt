@@ -1,0 +1,6 @@
+D:\Cosmetics\Cosmetics_web\CosmeticsWeb\CosmeticsShare\bin\Debug\CosmeticsShare.dll
+D:\Cosmetics\Cosmetics_web\CosmeticsWeb\CosmeticsShare\bin\Debug\CosmeticsShare.pdb
+D:\Cosmetics\Cosmetics_web\CosmeticsWeb\CosmeticsShare\obj\Debug\CosmeticsShare.csprojResolveAssemblyReference.cache
+D:\Cosmetics\Cosmetics_web\CosmeticsWeb\CosmeticsShare\obj\Debug\CosmeticsShare.csproj.CoreCompileInputs.cache
+D:\Cosmetics\Cosmetics_web\CosmeticsWeb\CosmeticsShare\obj\Debug\CosmeticsShare.dll
+D:\Cosmetics\Cosmetics_web\CosmeticsWeb\CosmeticsShare\obj\Debug\CosmeticsShare.pdb

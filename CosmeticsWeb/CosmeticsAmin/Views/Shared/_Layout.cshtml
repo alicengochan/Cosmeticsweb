@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>@ViewBag.Title - Cosmetics</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="~/fonts/googleapifont_css.css" rel="stylesheet" type="text/css" />
+    <link href="~/fonts/googleapifonticon.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap Core Css -->
+    <link href="~/Plugins/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!-- Waves Effect Css -->
+    <link href="~/Plugins/node-waves/waves.css" rel="stylesheet" />
+    <!-- Animation Css -->
+    <link href="~/Plugins/animate-css/animate.css" rel="stylesheet" />
+    <!-- Morris Chart Css-->
+    <link href="~/Plugins/morrisjs/morris.css" rel="stylesheet" />
+    <!-- Custom Css -->
+    <link href="~/Css/style.css" rel="stylesheet" />
+    <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
+    <link href="~/Css/all-themes.css" rel="stylesheet" />
+    <link href="~/Css/share.css" rel="stylesheet" />
+    <!-- Data Tables -->
+
+    <link href="~/Plugins/DataTables/datatables.min.css" rel="stylesheet" />
+</head>
+<body class="theme-red">
+    <!-- Page Loader -->
+    @*<div class="page-loader-wrapper">
+            <div class="loader">
+                <div class="preloader">
+                    <div class="spinner-layer pl-red">
+                        <div class="circle-clipper left">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="circle-clipper right">
+                            <div class="circle"></div>
+                        </div>
+                    </div>
+                </div>
+                <p></p>
+            </div>
+        </div>*@
+    <div class="overlay"></div>
+    @Html.Partial("_Search")
+    @Html.Partial("_Topmenu")
+    @Html.Partial("_Leftmenu")
+    @Html.Partial("_Rightside")
+    <section class="content">
+        <div class="container-fluid">
+            @RenderBody()
+
+        </div>
+    </section>
+
+    <!-- Jquery Core Js -->
+    <script src="~/Plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core Js -->
+    <script src="~/Plugins/bootstrap/js/bootstrap.js"></script>
+    <!-- Select Plugin Js -->
+    <script src="~/Plugins/bootstrap-select/js/bootstrap-select.js"></script>
+    <!-- Slimscroll Plugin Js -->
+    <script src="~/Plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- Waves Effect Plugin Js -->
+    <script src="~/Plugins/node-waves/waves.js"></script>
+    <!-- Jquery CountTo Plugin Js -->
+    <script src="~/Plugins/jquery-countto/jquery.countTo.js"></script>
+    <!-- Morris Plugin Js -->
+    <script src="~/Plugins/raphael/raphael.min.js"></script>
+    <script src="~/Plugins/morrisjs/morris.js"></script>
+    <!-- ChartJs -->
+    <script src="~/Plugins/chartjs/Chart.bundle.js"></script>
+    <!-- Flot Charts Plugin Js -->
+    <script src="~/Plugins/flot-charts/jquery.flot.js"></script>
+    <script src="~/Plugins/flot-charts/jquery.flot.resize.js"></script>
+    <script src="~/Plugins/flot-charts/jquery.flot.pie.js"></script>
+    <script src="~/Plugins/flot-charts/jquery.flot.categories.js"></script>
+    <script src="~/Plugins/flot-charts/jquery.flot.time.js"></script>
+    <!-- Sparkline Chart Plugin Js -->
+    <script src="~/Plugins/jquery-sparkline/jquery.sparkline.js"></script>
+    <!-- Custom Js -->
+    <script src="~/Js/admin.js"></script>
+    <script src="~/Js/index.js"></script>
+    <!-- Demo Js -->
+    <script src="~/Js/demo.js"></script>
+    <script src="~/Js/share.js"></script>
+    <!-- Data Tables -->
+    @*<script src="~/Js/jquery-1.12.4.js"></script>*@
+    <script src="~/Plugins/DataTables/datatables.min.js"></script>
+    @RenderSection("Scripts", false)
+</body>
+</html>
